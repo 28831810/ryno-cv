@@ -83,8 +83,7 @@ function onWeather(rawResponse) {
 
 function onSpaceX(rawResponse) {
     var response = JSON.parse(rawResponse);
-    //var SpaceXValues = Object.values(response.details);
-
+    
     var htmlList = `<tr>
                         <th>Latest Details of spaceX expeditions</th>
                     </tr>`;
@@ -139,22 +138,18 @@ function onScroll() {
 function handleScroll() {
     if (elementInViewport($('#welcome')))
     {
-        console.debug('Welcome? ', elementInViewport($('#welcome')));
-        //$('.welcome-background').css({'opacity' : 1});
         handleAnimation(0);
         return;
     }
 
     if (elementInViewport($('#projects')))
     {
-        console.debug('Projects? ', elementInViewport($('#projects')));
         handleAnimation(1);
         return;
     }
 
     if (elementInViewport($('#about')))
     {
-        console.debug('About? ', elementInViewport($('#about')));
         handleAnimation(2);
         return;
     }

@@ -1,7 +1,7 @@
 :root {
-  --primary-color: #0099FF;
-  --secondary-color: #0088AA;
-  --tertiary-color: #995522;
+  --primary-color: #5EACD2;
+  --secondary-color: #3D92BC;
+  --tertiary-color: #1F78A3;
   --text-color: #DDDDDD;
 }
 
@@ -38,33 +38,20 @@
   backdrop-filter: blur(10px);
 }
 
-#myDIV {
-  position: center;
-  width: 25%;
-  background-color: black;
-  color: #1cc91c
-  
-}
-
 /* SECTION BACKGROUNDS */
 .welcome-background {
-  background: url(https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
-  /* background: url(https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500); */
+  background: url(./img/lightblue-4.png);
 }
-
-.about-background {
-  background: url(https://images.unsplash.com/photo-1528441498660-efe78ffb632d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
-  /* background: url(https://images.unsplash.com/photo-1441831598748-609c9a7329a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80); */
+.projects-background {
+  background: url(./img/lightblue-3.png);
 }
-
-.some-background {
-  /* background: url(https://image.freepik.com/free-photo/wooden-plank-textured-background-material_53876-33591.jpg); */
-  background: url(https://images.unsplash.com/photo-1593642531955-b62e17bdaa9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
-}
-
 .more-background {
-  background: url(https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background: url(./img/lightblue-2.png);
 }
+.about-background {
+  background: url(./img/lightblue-1.png);
+}
+
 
 /* FLEX CONTAINER */
 .flex-container {
@@ -74,6 +61,7 @@
   position: relative;
   align-items: center;
   justify-content: center;
+  padding: 30px;
 }
   
 .flex-container > div {
@@ -89,15 +77,34 @@
   position: fixed;
   bottom: 0px;
   right: 0px;
-  background-color: var(--secondary-color);
-  width: 150px;
-  height: 170px;
+  background-color: var(--primary-color);
+  width: 110px;
+  height: 300px;
 }
 
 .button {
-  background-color: var(--tertiary-color);
-  color: var(--text-color);
-  width: 100%;
+  background-color: var(--primary-color); /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: var(--text-color); 
+  color: black; 
+  border: 2px solid var(--tertiary-color);
+}
+
+.button1:hover {
+  background-color: var(--secondary-color);
+  color: white;
 }
 
 .hide-button {
@@ -119,7 +126,7 @@
 
 .progress-bar {
   width: 100%;
-  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .aninmate-next {

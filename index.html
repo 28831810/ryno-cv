@@ -11,7 +11,7 @@
     </head>
     <body onscroll="onScroll()">
 
-        <!-- Welcome section -->
+            <!-- Welcome section -->
 
             <div id="welcome" class="section welcome-background">
                 <div class="section-heading">Welcome</div>
@@ -21,7 +21,7 @@
 
             <!-- project section -->
 
-            <div id="projects" class="section some-background">
+            <div id="projects" class="section projects-background">
                 <div class="section-heading">Projects</div>
                 <div class="section-paragraph blur">The crucial part that I learned with 4 years of university is that you should never give up. There is always a way past the mountain that lies ahead of you.</div>
                 <div class="section-paragraph blur">In my years of studying I had several big projects. Two of which I managed and lead groups between 3-6 members. The leadership role that were provided to me thought me how to be convedent in the decistions i made and to face the concecuances of making the wrong ones.</div>
@@ -46,14 +46,14 @@
             <div id="more" class="section more-background">
                 <div class="section-heading">More</div>
                 <div class="section-paragraph blur">I had a few interests that drove me in my freetime the 1st were different currency rates and the rise and fall of the market of different countries. My 2nd interest was weather paterns in each of the countries im looking to move to in the future. My 3rd interest was the newest inventions by spaceX. I weil include some data under this paragraph if you would like to see more.</div>
-                <!-- Content of hidden paragraph -->
+            <!-- Content of hidden paragraph -->
                 <div id="myDIVexchangerate" class="section-paragraph blur">Contents of hidden currency</div>
                 <div id="myDIVweather" class="section-paragraph blur">Contents of hidden weather</div>
                 <div id="myDIVspaceX" class="section-paragraph blur">Contents of hidden spaceX Details</div>
-                <!-- Display hidden data of different interests -->
-                <button onclick="myHiddenCurrency()">Show currency</button>
-                <button onclick="myHiddenWeather()">Show Weather</button>
-                <button onclick="myHiddenSpaceX()">Show SpaceX</button>
+            <!-- Display hidden data of different interests -->
+                <button class="button button1" onclick="myHiddenCurrency()">Show currency</button>
+                <button class="button button1" onclick="myHiddenWeather()">Show Weather</button>
+                <button class="button button1" onclick="myHiddenSpaceX()">Show SpaceX</button>
                 
             </div>
 
@@ -73,21 +73,18 @@
             <!-- minimap naigate -->
 
             <div id="minimap" class="navigation-container">
-                <input type="button" class="button" onClick="onWelcome()" value="Welcome"></input>
+                <input type="button" class="button button1" onClick="onWelcome()" value="Welcome"></input>
                 <div class="progress-container">
                     <div id="welcome-project-bar" class="progress-bar"></div>
                 </div>
-                <input type="button" class="button" onClick="onProjects()" value="Projects"></input>
+                <input type="button" class="button button1" onClick="onProjects()" value="Projects"></input>
                 <div class="progress-container">
                     <div id="project-about-bar" class="progress-bar"></div>
                 </div>
-                <input type="button" class="button" onClick="onAbout()" value="About"></input>
+                <input type="button" class="button button1" onClick="onAbout()" value="About"></input>
             </div>
             <input type="button" id="show-button" class="show-button" onClick="onShowMinimap()" value="<"></input>
             <input type="button" id="hide-button" class="hide-button" onClick="onHideMinimap()" value=">"></input>
-            <!-- <div id="exchange-rate-display">
-                <div>USD = 21678</div>    
-            <div> -->
     </body>
 </html>
 
