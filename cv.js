@@ -224,7 +224,7 @@ function onInit() {
     // Start async API calls
     httpGetAsync('https://api.exchangeratesapi.io/latest?base=ZAR', onExchangeRates);
     httpGetAsync('https://api.spacexdata.com/v4/launches/latest', onSpaceX);
-    httpGetAsync('http://api.openweathermap.org/data/2.5/weather?q=johannesburg&appid=a0db0b7bf6b049dd55b5cc50ab2a1994&units=metric', onWeather);
+    httpGetAsync('https://api.openweathermap.org/data/2.5/weather?q=johannesburg&appid=a0db0b7bf6b049dd55b5cc50ab2a1994&units=metric', onWeather);
 }
 
 onInit();
