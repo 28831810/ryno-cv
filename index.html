@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="./cv.js"></script>
+    </head>
+    <body onscroll="onScroll()">
+
+        <!-- Welcome section -->
+
+            <div id="welcome" class="section welcome-background">
+                <div class="section-heading">Welcome</div>
+                <div class="section-paragraph blur">I'm Ryno</div>
+                <div class="section-paragraph blur">I am currently a final year BSC Information Technology student at North-West University.</div>
+            </div>
+
+            <!-- project section -->
+
+            <div id="projects" class="section some-background">
+                <div class="section-heading">Projects</div>
+                <div class="section-paragraph blur">The crucial part that I learned with 4 years of university is that you should never give up. There is always a way past the mountain that lies ahead of you.</div>
+                <div class="section-paragraph blur">In my years of studying I had several big projects. Two of which I managed and lead groups between 3-6 members. The leadership role that were provided to me thought me how to be convedent in the decistions i made and to face the concecuances of making the wrong ones.</div>
+                <div class="section-paragraph blur">CODE LANGUAGES</div>
+                <div class="flex-container">
+                    <div class="blur">HTML</div>
+                    <div class="blur">JAVA</div>
+                    <div class="blur">C#</div>
+                    <div class="blur">PYTHON</div>
+                    <div class="blur">SQL</div>
+                    <div class="blur">ASP.NET</div>
+                    <div class="blur">JavaScript</div>
+                    <div class="blur">Cisco</div>
+                    <div class="blur">Oracle</div>
+                </div>
+                <div class="section-paragraph blur">Achivements that lead me to become the person I am today. *gymnastics - 7 years of experience - Three time winner of provincials - second place in nationals *Gaming -Potch LAN League 2017 and 2018: 1st -Potch LAN League 2019: 2nd - Global Elite Rank in CSGO</div>
+                <div class="section-paragraph blur">Work Experiance *Horns Hardware 3 months *Netcad as helpdesk 1 week</div>
+            </div>
+
+            <!-- More section -->
+
+            <div id="more" class="section more-background">
+                <div class="section-heading">More</div>
+                <div class="section-paragraph blur">I had a few interests that drove me in my freetime the 1st were different currency rates and the rise and fall of the market of different countries. My 2nd interest was weather paterns in each of the countries im looking to move to in the future. My 3rd interest was my acivements on steam with my free time. I weil include some data under this paragraph if you would like to see more.</div>
+                <!-- Content of hidden paragraph -->
+                <div id="myDIVexchangerate" class="section-paragraph blur">Contents of hidden currency</div>
+                <div id="myDIVweather" class="section-paragraph blur">Contents of hidden weather</div>
+                <div id="myDIVspaceX" class="section-paragraph blur">Contents of hidden spaceX Details</div>
+                <!-- Display hidden data of different interests -->
+                <button onclick="myHiddenCurrency()">Show currency</button>
+                <button onclick="myHiddenWeather()">Show Weather</button>
+                <button onclick="myHiddenSpaceX()">Show SpaceX</button>
+                
+            </div>
+
+            <!-- About section -->
+
+            <div id="about" class="section about-background">
+                <div class="section-heading">About</div>
+                <div class="flex-container">
+                    <div class="blur">Ryno Conradie</div>
+                    <div class="blur">North-west University</div>
+                    <div class="blur">Rynoconradie12@gmail.com</div>
+                    <div class="blur">Phone: +27795007385</div>
+                </div>
+            </div>
+
+            <!-- navigation section -->
+            <!-- minimap naigate -->
+
+            <div id="minimap" class="navigation-container">
+                <input type="button" class="button" onClick="onWelcome()" value="Welcome"></input>
+                <div class="progress-container">
+                    <div id="welcome-project-bar" class="progress-bar"></div>
+                </div>
+                <input type="button" class="button" onClick="onProjects()" value="Projects"></input>
+                <div class="progress-container">
+                    <div id="project-about-bar" class="progress-bar"></div>
+                </div>
+                <input type="button" class="button" onClick="onAbout()" value="About"></input>
+            </div>
+            <input type="button" id="show-button" class="show-button" onClick="onShowMinimap()" value="<"></input>
+            <input type="button" id="hide-button" class="hide-button" onClick="onHideMinimap()" value=">"></input>
+            <!-- <div id="exchange-rate-display">
+                <div>USD = 21678</div>    
+            <div> -->
+    </body>
+</html>
+

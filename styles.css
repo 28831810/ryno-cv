@@ -1,0 +1,159 @@
+:root {
+  --primary-color: #0099FF;
+  --secondary-color: #0088AA;
+  --tertiary-color: #995522;
+  --text-color: #DDDDDD;
+}
+
+.blur {
+  background-color: #00000044;
+  border-radius: 10px;
+}
+
+  /* SECTIONS */
+.section {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  position: relative;
+  background-color: var(--secondary-color);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.section-heading {
+  color: white;
+  font-size: 6rem;
+}
+
+.section-heading::before {
+  filter: blur(4px);
+}
+
+.section-paragraph {
+  padding: 10px;
+  margin: 50px 20px;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  backdrop-filter: blur(10px);
+}
+
+#myDIV {
+  position: center;
+  width: 25%;
+  background-color: black;
+  color: #1cc91c
+  
+}
+
+/* SECTION BACKGROUNDS */
+.welcome-background {
+  background: url(https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  /* background: url(https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500); */
+}
+
+.about-background {
+  background: url(https://images.unsplash.com/photo-1528441498660-efe78ffb632d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+  /* background: url(https://images.unsplash.com/photo-1441831598748-609c9a7329a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80); */
+}
+
+.some-background {
+  /* background: url(https://image.freepik.com/free-photo/wooden-plank-textured-background-material_53876-33591.jpg); */
+  background: url(https://images.unsplash.com/photo-1593642531955-b62e17bdaa9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80);
+}
+
+.more-background {
+  background: url(https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+}
+
+/* FLEX CONTAINER */
+.flex-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+  
+.flex-container > div {
+  width: 400px;
+  margin: 0px 10px;
+  line-height: 75px;
+  font-size: 30px;
+  color: var(--text-color);
+}
+
+/* NAVIGATION */
+.navigation-container {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  background-color: var(--secondary-color);
+  width: 400px;
+  height: 400px;
+}
+
+.button {
+  background-color: var(--tertiary-color);
+  color: var(--text-color);
+  width: 100%;
+}
+
+.hide-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.show-button {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.progress-container {
+  color: var(--primary-color);
+  height: 40px;
+}
+
+.progress-bar {
+  width: 100%;
+  color: var(--secondary-color);
+}
+
+.aninmate-next {
+  animation-duration: 3s;
+  animation-name: next;
+  animation-fill-mode: forwards;
+}
+
+.aninmate-previous {
+  animation-duration: 3s;
+  animation-name: previous;
+  animation-fill-mode: forwards;
+}
+
+@keyframes next {
+  from {
+    height: 0%;
+  }
+
+  50% {
+    background-color: lightcoral;
+  }
+
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes previous {
+  from {
+    width: 0%; 
+  }
+
+  to {
+    width: 100%;
+  }
+}
